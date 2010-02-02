@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "whiny_destruction"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Make destroy failures complain}
+    gem.description = %Q{Adds a destroy! method to ActiveRecord that raises an error if the destroy fails}
     gem.email = "lachlan.sylvester@hypothetical.com.au"
     gem.homepage = "http://github.com/lsylvester/whiny_destruction"
     gem.authors = ["Lachlan Sylvester"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_dependency "activerecord"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

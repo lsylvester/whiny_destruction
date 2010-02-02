@@ -1,6 +1,6 @@
 = whiny_destruction
 
-Description goes here.
+Adds a destroy! method to ActiveRecord that raises an error if an attempt to destroy the record fails.
 
 == Note on Patches/Pull Requests
  
